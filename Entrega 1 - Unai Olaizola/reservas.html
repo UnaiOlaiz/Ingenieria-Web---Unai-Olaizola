@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Realiza la reserva de tu embarcacíon en pocos pasos">
+        <title>Reservar embarcación</title>
+        <link rel="icon" href="https://img.freepik.com/premium-vector/ship-logo-vector-design_986425-88.jpg" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"> <!--For the font-->
+    </head>
+
+    <body>
+        <!--Encabezado-->
+        <header>
+            <h2>Completa tu reserva</h2>
+            <p>Rellena el formulario para realizar la reserva de tu embarcación</p>
+        </header>
+
+        <!--Formulario para realizar la reserva-->
+        <form action="/submit_form" method="post">
+            
+            <fieldset>
+                <legend>Datos personales</legend>
+                <!--Nombre-->
+                <label for="name">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+
+                <!--Apellidos-->
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos"><br>
+
+                <!--Email-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <!--Teléfono-->
+                <label for="tel">Teléfono:</label>
+                <input type="tel" id="tel" name="tel"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos sobre el viaje</legend>
+                <!--Cantidad de pasajeros-->
+                <label for="pasajeros">Número de pasajeros:</label>
+                <input type="number" id="pasajeros" name="pasajeros" min="1" max="99" placeholder="0"><br>
+
+                <!--Checkbox ida y vuelta-->
+                <label for="ida_y_vuelta">Ida y vuelta:</label>
+                <input type="checkbox" id="ida_y_vuelta" name="ida_y_vuelta"><br>
+            
+                <!--Fecha de Salida-->
+                <label for="salida">Fecha de salida:</label>
+                <input type="date" id="salida" name="salida"><br>
+
+                <!--Fecha de Vuelta-->
+                <label for="vuelta">Fecha de vuelta:</label>
+                <input type="date" id="vuelta" name="vuelta"><br>
+            
+                <!--Tipo de embarcación-->
+                <label for="tipo_embarcacion">Escoga el tipo de embarcación:</label>
+                <select id="tipo_embarcacion" name="tipo_embarcacion">
+                    <option value="yate" selected>Yate</option>
+                    <option value="lancha_pequeña">Lancha pequeña</option>
+                    <option value="catamaran">Catamarán</option>
+                </select><br>
+            </fieldset>
+
+            <!--Botón de confirmación-->
+            <button type="submit">Confirmar reserva</button>
+            
+
+           
+
+
+        </form>
+    </body>
+</html>
