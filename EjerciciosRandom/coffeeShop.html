@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee World - Tu Tienda de Café</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>Bienvenido a Coffee World</h1>
+        <p>¡El mejor café para los verdaderos amantes del café!</p>
+    </header>
+
+    <!--Menú de navegación-->
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="menu">Menú</a>
+        <a href="contact">Contacto</a>
+    </nav>
+
+    <!--Contenido principal-->
+    <div class="container">
+
+        <!--Sección de introducción-->
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En <strong>Coffee World</strong>, ofrecemos una selección de los mejores granos de café de todo el mundo. Ya sea que prefieras un espresso fuerte o un latte suave, tenemos algo para cada paladar.</p>
+            <div class="content">
+                <img src="https://via.placeholder.com/300x200" alt="Taza de café">
+                <img src="https://via.placeholder.com/300x200" alt="Granos de café">
+            </div>
+        </section>
+
+        <!--Selección del menú-->
+        <section id="menu">
+            <h2>Nuestro Menú</h2>
+            <p>Descubre nuestras especialidades de café:</p>
+
+            <!--Lista desordenada-->
+            <ul>
+                <li>Espresso</li>
+                <li>Café Americano</li>
+                <li>Latte</li>
+                <li>Capuchino</li>
+                <li>Mocca</li>
+            </ul>
+
+            <!--Lista ordenada-->
+            <h3>Nuestros Granos de Café Premium</h3>
+            <ol>
+                <li>Café de Etiopía</li>
+                <li>Café Colombiano</li>
+                <li>Café Brasileño</li>
+                <li>Café de Sumatra</li>
+            </ol>
+
+            <!--Tabla de precios-->
+            <h3>Precios</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bebida</th>
+                        <th>Tamaño Pequeño</th>
+                        <th>Tamaño Grande</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Espresso</th>
+                        <th>$3.50</th>
+                        <th>$4.50</th>
+                    </tr>
+                    <tr>
+                        <td>Capuchino</td>
+                        <td>$3.00</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mocca</td>
+                        <td>$3.75</td>
+                        <td>$4.75</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Sección de contacto-->
+        <section id="contact">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta? No dudes en <a href="mailto:info@coffeeworld.com">escribirnos</a> o visitarnos en nuestra tienda local.</p>
+        </section>
+    </div>
+
+    <!--Pie de página-->
+    <footer>
+        <p>&copy; 2024 Coffee World. Todos los derechos reservados.</p>
+    </footer>
+</body>
+    
+</html>

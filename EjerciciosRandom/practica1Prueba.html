@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .center {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML" width="150">
+    </div>
+    <br>
+
+    <h1>Introducción a HTML y HTML5</h1>
+
+    <h2>1. ¿Qué es HTML?</h2>
+    <p>HTML, sigla en inglés de <strong>HyperText Markup Language</strong> (lenguaje de marcas de hipertexto), es el lenguaje de marcado estándar para la creación de páginas web. Define la estructura y el contenido de una página web usando un código llamado <strong>código HTML</strong>.</p>
+    
+    <h2>2. ¿Qué es HTML5?</h2>
+    <p><strong>HTML5</strong> es la quinta y última versión del lenguaje HTML. Introduce nuevas características y mejoras sobre HTML4.01, como un mejor soporte para multimedia, nuevos elementos semánticos y una mayor interoperabilidad con tecnologías modernas. HTML5 incluye elementos como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, y <code>&lt;section&gt;</code> que permiten una estructura más clara y significativa del contenido.</p>
+
+    <h2>3. Elementos Básicos de Texto</h2>
+    <p>HTML permite estructurar contenido utilizando títulos, párrafos y otros elementos de texto. Los títulos se definen mediante las etiquetas de encabezado, como <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc., mientras que los párrafos se crean con la etiqueta <code>&lt;p&gt;</code>.</p>
+    <p>Para insertar un salto de línea simple, se utiliza la etiqueta <code>&lt;br&gt;</code>. Esta etiqueta es útil para separar líneas dentro de un párrafo.</p>
+
+    <h2>4. Listas Anidadas</h2>
+    <ul>
+        <li>Lista Principal
+            <ul>
+                <li>Elemento de la Sublista 1</li>
+                <li>Elemento de la Sublista 2</li>
+            </ul>
+        </li>
+        <li>Otro Elemento de la Lista Principal</li>
+    </ul>
+
+    <h2>5. Tabla de Ejemplo</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1.1</td>
+                <td>Dato 1.2</td>
+                <td>Dato 1.3</td>
+            </tr>
+            <tr>
+                <td>Dato 2.1</td>
+                <td>Dato 2.2</td>
+                <td>Dato 2.3</td>
+            </tr>
+            <tr>
+                <td>Dato 3.1</td>
+                <td>Dato 3.2</td>
+                <td>Dato 3.3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>6. Hipervínculos</h2>
+    <p>Los hipervínculos se crean usando la etiqueta <code>&lt;a&gt;</code>. Puedes enlazar a otras páginas web o a secciones dentro de la misma página. Por ejemplo, haz clic <a href="https://www.w3.org/html/" target="_blank">aquí</a> para aprender más sobre HTML en el sitio oficial del W3C.</p>
+</body>
+</html>

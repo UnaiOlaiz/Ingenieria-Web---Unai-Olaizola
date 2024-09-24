@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ejercicio HTML5 3</title>
+
+    <style>
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="center" style="font-size: 28px;">
+        <h2>Reserva de sociedad</h2>
+    </div>
+
+    <p>Rellena el siguiente formulario para reservar la sociedad para un día en concreto</p><br>
+
+    <form action="form.php" method="post">
+
+        <fieldset> 
+            <legend>Datos del usuario</legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <p>¿Eres socio?</p>
+            <input type="radio" id="socio_si" name="socio" value="si">
+            <label for="socio_si">Sí, soy socio</label>
+            <input type="radio" id="socio_no" name="socio" value="no">
+            <label for="socio_no">No soy socio</label><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña"><br><br>    
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+
+            <label for="edad">Edad</label>
+            <select id="groups", name="gruops">
+                <optgroup>
+                    <option selected>Menor de 18</option>
+                    <option>Entre 18 y 65</option>
+                    <option>Mayor de 65</option>
+                </optgroup>
+            </select><br><br>
+
+            <p>Selecciona la fecha y hora de reserva</p>
+            <input type="date" id="fecha_reserva" name="fecha_reserva">
+            <input type="time" id="hora_reserva" name="hora_reserva">
+
+            <label for="comentarios"></label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Comentarios"></textarea><br><br>
+
+            <input type="checkbox" id="checkbox" name="check">Acepto las condiciones
+            
+
+        </fieldset>
+
+        <input type="submit" value="ENVIAR">
+
+    </form>
+
+</body>
+</html>
