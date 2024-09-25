@@ -25,48 +25,48 @@
         </nav>
 
         <!--Formulario para realizar la reserva-->
-        <form action="/submit_form" method="post">
+        <form action="pagina_confirmacion.html" method="post">
             
             <fieldset>
                 <legend>Datos personales</legend>
                 <!--Nombre-->
                 <label for="name">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br>
+                <input type="text" id="nombre" name="nombre" required><br>
 
                 <!--Apellidos-->
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos"><br>
+                <input type="text" id="apellidos" name="apellidos" required><br>
 
                 <!--Email-->
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
 
                 <!--Teléfono-->
                 <label for="tel">Teléfono:</label>
-                <input type="tel" id="tel" name="tel"><br>
+                <input type="tel" id="tel" name="tel" required><br>
             </fieldset>
 
             <fieldset>
                 <legend>Datos sobre el viaje</legend>
                 <!--Cantidad de pasajeros-->
                 <label for="pasajeros">Número de pasajeros:</label>
-                <input type="number" id="pasajeros" name="pasajeros" min="1" max="99" placeholder="0"><br>
+                <input type="number" id="pasajeros" name="pasajeros" min="1" max="99" placeholder="0" required><br>
 
                 <!--Checkbox ida y vuelta-->
                 <label for="ida_y_vuelta">Ida y vuelta:</label>
-                <input type="checkbox" id="ida_y_vuelta" name="ida_y_vuelta"><br>
+                <input type="checkbox" id="ida_y_vuelta" name="ida_y_vuelta" required><br>
             
                 <!--Fecha de Salida-->
                 <label for="salida">Fecha de salida:</label>
-                <input type="date" id="salida" name="salida"><br>
+                <input type="date" id="salida" name="salida" required><br>
 
                 <!--Fecha de Vuelta-->
                 <label for="vuelta">Fecha de vuelta:</label>
-                <input type="date" id="vuelta" name="vuelta"><br>
+                <input type="date" id="vuelta" name="vuelta" required><br>
             
                 <!--Tipo de embarcación-->
                 <label for="tipo_embarcacion">Escoga el tipo de embarcación:</label>
-                <select id="tipo_embarcacion" name="tipo_embarcacion">
+                <select id="tipo_embarcacion" name="tipo_embarcacion" required>
                     <option value="yate" selected>Yate</option>
                     <option value="lancha_pequeña">Lancha pequeña</option>
                     <option value="catamaran">Catamarán</option>

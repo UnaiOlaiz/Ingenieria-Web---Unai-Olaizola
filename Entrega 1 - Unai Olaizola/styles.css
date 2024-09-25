@@ -332,3 +332,39 @@ img {
 .preguntas_frecuentes h2 {
     color: #007BFF;
 }
+
+#mensaje_confirmacion {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mensaje_confirmacion h3 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+#mensaje_confirmacion p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#mensaje_confirmacion a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mensaje_confirmacion a:hover {
+    text-decoration: underline;
+}
+
