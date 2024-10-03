@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Realiza la reserva de tu embarcacíon en pocos pasos">
-        <title>Reservar embarcación</title>
-        <link rel="icon" href="https://img.freepik.com/premium-vector/ship-logo-vector-design_986425-88.jpg" type="image/png">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"> <!--For the font-->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Realiza la reserva de tu embarcacíon en pocos pasos">
+    <title>Reservar embarcación</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/ship-logo-vector-design_986425-88.jpg" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"> <!--For the font-->
+</head>
 
-    <body>
-        <!--Encabezado-->
-        <header>
-            <h2>Completa tu reserva</h2>
-            <p>Rellena el formulario para realizar la reserva de tu embarcación</p>
-        </header>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h2>Completa tu reserva</h2>
+        <p>Rellena el formulario para realizar la reserva de tu embarcación</p>
+    </header>
 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="embarcaciones.html">Nuestras embarcaciones</a>
-            <a href="preguntas.html">Preguntas</a>
-            <a href="contacto.html">Contacta con nosotros</a>
-        </nav>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="embarcaciones.html">Nuestras embarcaciones</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="contacto.html">Contacta con nosotros</a>
+    </nav>
 
-        <!--Formulario para realizar la reserva-->
-        <form action="pagina_confirmacion_reserva.html" method="post">
-            
-            <fieldset>
-                <legend>Datos personales</legend>
-                <!--Nombre-->
-                <label for="name">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br>
+    <!--Formulario para realizar la reserva-->
+    <form action="pagina_confirmacion_reserva.html" method="post">
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+            <!--Nombre-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
 
-                <!--Apellidos-->
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required><br>
+            <!--Apellidos-->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br>
 
-                <!--Email-->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-                <!--Teléfono-->
-                <label for="tel">Teléfono:</label>
-                <input type="tel" id="tel" name="tel" required><br>
-            </fieldset>
+            <!--Teléfono-->
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel" required><br>
+        </fieldset>
 
-            <fieldset>
-                <legend>Datos sobre el viaje</legend>
-                <!--Cantidad de pasajeros-->
-                <label for="pasajeros">Número de pasajeros:</label>
-                <input type="number" id="pasajeros" name="pasajeros" min="1" max="99" placeholder="0" required><br>
+        <fieldset>
+            <legend>Datos sobre el viaje</legend>
+            <!--Cantidad de pasajeros-->
+            <label for="pasajeros">Número de pasajeros:</label>
+            <input type="number" id="pasajeros" name="pasajeros" min="1" max="99" placeholder="0" required><br>
 
-                <!--Checkbox ida y vuelta-->
-                <label for="ida_y_vuelta">Ida y vuelta:</label>
-                <input type="checkbox" id="ida_y_vuelta" name="ida_y_vuelta"><br>
-            
-                <!--Fecha de Salida-->
-                <label for="salida">Fecha de salida:</label>
-                <input type="date" id="salida" name="salida" required><br>
+            <!--Checkbox ida y vuelta-->
+            <label for="ida_y_vuelta">Ida y vuelta:</label>
+            <input type="checkbox" id="ida_y_vuelta" name="ida_y_vuelta"><br>
+        
+            <!--Fecha de Salida-->
+            <label for="salida">Fecha de salida:</label>
+            <input type="date" id="salida" name="salida" required><br>
 
-                <!--Fecha de Vuelta-->
-                <label for="vuelta">Fecha de vuelta:</label>
-                <input type="date" id="vuelta" name="vuelta"><br>
-            
-                <!--Tipo de embarcación-->
-                <label for="tipo_embarcacion">Escoga el tipo de embarcación:</label>
-                <select id="tipo_embarcacion" name="tipo_embarcacion" required>
-                    <option value="yate" selected>Yate</option>
-                    <option value="lancha_pequeña">Lancha pequeña</option>
-                    <option value="catamaran">Catamarán</option>
-                </select><br>
-            </fieldset>
+            <!--Fecha de Vuelta-->
+            <label for="vuelta">Fecha de vuelta:</label>
+            <input type="date" id="vuelta" name="vuelta"><br>
+        
+            <!--Tipo de embarcación-->
+            <label for="tipo_embarcacion">Escoga el tipo de embarcación:</label>
+            <select id="tipo_embarcacion" name="tipo_embarcacion" required>
+                <option value="" disabled selected>Seleccione un tipo de embarcación</option>
+                <option value="yate">Yate</option>
+                <option value="lancha_pequeña">Lancha pequeña</option>
+                <option value="catamaran">Catamarán</option>
+            </select><br>
+        </fieldset>
 
-            <!--Botón de confirmación-->
-            <button type="submit">Confirmar reserva</button>
+        <!--Botón de confirmación-->
+        <button type="submit">Confirmar reserva</button>
 
-        </form>
+    </form>
 
-        <footer>
-            <p>&copy; 2024 Cruza Tánger. Todos los derechos reservados.</p>
-        </footer>
-    </body>
+    <footer>
+        <p>&copy; 2024 Cruza Tánger. Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>
